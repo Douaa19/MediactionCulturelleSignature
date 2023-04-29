@@ -1,96 +1,94 @@
-
-*  {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Mairy Book';
-    transition: all .2s linear;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Mairy Book";
+  transition: all 0.2s linear;
 }
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ccc;
+  /* min-height: 100vh; */
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .card {
-    width: 600px;
-    background: #FFF;
-    overflow: hidden;
-    box-shadow: 0 5px 10px #0007;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 20px;
+  width: 600px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 10px #0007;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .container .card .image {
-    text-align: right;
-    padding: 50px 0;
+  text-align: right;
+  padding: 50px 0;
 }
 
 .container .card .image img {
-    width: 70%;
-    object-fit: cover;
+  width: 70%;
+  object-fit: cover;
 }
 
 .container .card .content {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    color: #00C878;
-    height: 150px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  color: #00c878;
+  height: 150px;
 }
 
 .container .card .content .title {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .container .card .content .title h1 {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 .container .card .content .infos {
-    text-align: right;
-    font-size: 16px;
+  text-align: right;
+  font-size: 16px;
 }
 
 .container .card .content .infos a {
-    color: #00C878;
+  color: #00c878;
+}
+
+.container .card .content .infos svg {
+  width: 20px;
 }
 
 .container .card .content .infos .tele {
-    margin: 0 0 8px;
+  margin: 0 0 8px;
 }
 
+@media (max-width: 650px) {
+  .container .card {
+    flex-flow: column-reverse;
+    width: 340px;
+    height: auto;
+  }
 
+  .container .card .image {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
 
-@media (max-width:650px) {
+  .container .card .image img {
+    width: 70%;
+  }
 
-    .container .card {
-        flex-flow: column-reverse;
-        width: 340px;
-        height: auto;
-    }
-
-    .container .card .image {
-        width: 100%;
-        padding: 40px 0;
-        text-align: center;
-    }
-
-    .container .card .image img {
-        width: 70%;
-    }
-
-    .container .card .content {
-        text-align: center;
-        margin: 0 0 40px;
-        height: 150px;
-    }
-
+  .container .card .content {
+    text-align: center;
+    margin: 0 0 40px;
+    height: 150px;
+  }
 }
-
