@@ -19,7 +19,7 @@
   width: 600px;
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 5px 10px #0007;
+  /* box-shadow: 0 5px 10px #0007; */
   display: flex;
   align-items: center;
   justify-content: space-around;
